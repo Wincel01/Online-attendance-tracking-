@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Teacher Dashboard</h1>
+        <form action="#" method="POST">
+            <input type="text" name="studentId" placeholder="Student ID" required><br>
+            <select name="status" required>
+                <option value="present">Present</option>
+                <option value="absent">Absent</option>
+            </select><br>
+            <textarea name="reason" placeholder="Reason (if absent)"></textarea><br>
+            <select name="subject" required>
+                <option value="English">English</option>
+                <option value="Math">Math</option>
+                <option value="PE">PE</option>
+                <option value="Science">Science</option>
+            </select><br>
+            <select name="section" required>
+                <option value="NS">NS</option>
+                <option value="WMAD">WMAD</option>
+                <option value="BPO">BPO</option>
+                <option value="BA">BA</option>
+            </select><br>
+            <button type="submit">Mark Attendance</button>
+        </form>
+    </div>
+</body>
+</html>
